@@ -37,6 +37,9 @@ body {
 
 .huddle-landing {
   max-width: 1440px;
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 .hero {
@@ -45,7 +48,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-   align-items: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -154,17 +157,18 @@ body {
 @media (max-width: 50rem) {
   body {
     width: 100%;
+    height: 100vh;
     background-size: contain;
     background-position: top;
     background-image: url(./images/bg-mobile.svg);
   }
 
   .huddle-landing {
-    min-width: 20rem;
+    width: 100%;
+    height: 70rem;
   }
 
   .hero {
-    max-height: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
